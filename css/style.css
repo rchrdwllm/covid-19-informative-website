@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap');
+
+:root {
+    --primary-background: #f6f9fe;
+    --secondary-background: #b1d0f3;
+    --primary-text: #0f405b;
+    --secondary-text: #7f919d;
+    --primary-accent: #3074e3;
+    --secondary-accent: #db5555;
+    --border: #e5ecf8;
+    --card: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sora', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--primary-background);
+    color: var(--secondary-text);
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--primary-text);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    line-height: 180%;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+li {
+    line-height: 180%;
+    text-align: justify;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(246, 249, 254, 0.8);
+    backdrop-filter: blur(40px);
+    border-bottom: 2px solid var(--border);
+    z-index: 2;
+    font-size: 1rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li:not(:first-child) {
+    margin-left: 4rem;
+}
+
+nav ul li a {
+    transition: 0.25s color;
+}
+
+nav ul li a:hover {
+    color: var(--primary-text);
+}
+
+nav ul li a.active {
+    font-weight: 700;
+    color: var(--primary-text);
+}
+
+nav ul li:last-child a {
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    background-color: var(--primary-accent);
+    color: var(--primary-background);
+    border: 2px solid var(--primary-accent);
+    transition: 0.25s background-color;
+}
+
+nav ul li:last-child a:hover {
+    color: var(--primary-accent);
+    background-color: var(--primary-background);
+}
+
+footer {
+    position: relative;
+    text-align: center;
+    padding: 15rem 0 5rem;
+}
+
+.smooth-scroll {
+    position: fixed;
+}
+
+.virus[data-scroll] {
+    opacity: 0;
+    will-change: transform, opacity;
+    transition: opacity 1.5s;
+}
+
+.virus[data-scroll].is-inview {
+    opacity: 1;
+}
+
+.virus {
+    position: absolute;
+    z-index: -1;
+    width: unset;
+}
+
+@media screen and (min-width: 1556px) {
+    body {
+        font-size: 1.25rem;
+    }
+
+    nav {
+        padding: 2rem 15rem;
+    }
+}

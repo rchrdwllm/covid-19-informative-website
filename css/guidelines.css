@@ -1,0 +1,182 @@
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10rem;
+}
+
+.hero h1 {
+    font-size: 6rem;
+}
+
+.hero h1 span {
+    color: var(--primary-accent);
+}
+
+.hero p {
+    width: 60%;
+}
+
+.preventive-measures {
+    padding: 5rem 10rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    place-items: center;
+}
+
+.preventive-measures h3 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: var(--primary-accent);
+    margin-bottom: 1rem;
+}
+
+.preventive-measures h1 {
+    font-size: 5rem;
+}
+
+.preventive-measures ul {
+    margin-top: 2rem;
+}
+
+.vaccination {
+    padding: 10rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    place-items: center;
+}
+
+.vaccination h1 {
+    font-size: 5rem;
+}
+
+.vaccination ul {
+    margin-top: 2rem;
+}
+
+.vaccination h4 {
+    margin-top: 2rem;
+}
+
+.facts {
+    position: relative;
+    padding: 10rem 10rem 0;
+}
+
+.facts h3 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: var(--primary-accent);
+    margin-bottom: 1rem;
+}
+
+.facts h1 {
+    font-size: 5rem;
+}
+
+.facts ul {
+    margin-top: 2rem;
+}
+
+.references {
+    position: relative;
+    padding: 10rem 10rem 0;
+}
+
+.references h3 {
+    font-size: 2rem;
+    color: var(--secondary-text);
+}
+
+.references a {
+    display: block;
+    text-decoration: underline;
+    transition: 0.25s color;
+    width: fit-content;
+}
+
+.references a:not(:first-child) {
+    margin-top: 1rem;
+}
+
+.references a:hover {
+    color: var(--primary-accent);
+}
+
+.virus-1 {
+    top: -5rem;
+    right: -10rem;
+    width: 30%;
+}
+
+.virus-2 {
+    bottom: -5rem;
+    left: -10rem;
+    width: 30%;
+}
+
+.virus-3 {
+    top: -7rem;
+    left: -20rem;
+}
+
+.virus-4 {
+    right: -10rem;
+    bottom: -20rem;
+    width: 25%;
+}
+
+.virus-5 {
+    left: -10rem;
+    bottom: -15rem;
+    width: 25%;
+}
+
+.img-container {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.img-container img {
+    object-fit: cover;
+}
+
+@media screen and (min-width: 1556px) {
+    .hero {
+        padding: 0 15rem;
+    }
+
+    .hero h1 {
+        font-size: 7rem;
+    }
+
+    .preventive-measures {
+        padding: 5rem 15rem 0;
+        gap: 7rem;
+    }
+
+    .preventive-measures h1 {
+        font-size: 6rem;
+    }
+
+    .vaccination {
+        padding: 10rem 15rem;
+        gap: 7rem;
+    }
+
+    .vaccination h1 {
+        font-size: 6rem;
+    }
+
+    .facts {
+        padding: 10rem 15rem 0;
+    }
+
+    .references {
+        padding: 10rem 15rem 0;
+    }
+}
