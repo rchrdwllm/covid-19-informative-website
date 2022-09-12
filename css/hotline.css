@@ -1,0 +1,131 @@
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10rem;
+}
+
+.hero h1 {
+    font-size: 6rem;
+}
+
+.hero h1 span {
+    color: var(--primary-accent);
+}
+
+.hotline-container {
+    padding: 5rem 10rem;
+}
+
+.hotline-container .hotline {
+    background-color: var(--card);
+    border-radius: 20px;
+    box-shadow: 0 40px 50px #deebff;
+    width: 100%;
+}
+
+.hotline-container .hotline table {
+    width: 100%;
+    padding: 2rem;
+}
+
+.hotline-container .hotline table th,
+.hotline-container .hotline table td {
+    border-bottom: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+}
+
+.hotline-container .hotline table th:last-child,
+.hotline-container .hotline table td:last-child {
+    border-right: none;
+}
+
+.hotline-container .hotline table th {
+    text-align: left;
+    padding: 0.5rem;
+    color: var(--primary-text);
+}
+
+.hotline-container .hotline table td {
+    padding: 1rem 0.5rem;
+}
+
+.hotline-container .hotline table .region p {
+    color: var(--primary-text);
+}
+
+.telemedicine {
+    position: relative;
+    padding: 5rem 10rem 0;
+}
+
+.telemedicine h1 {
+    font-size: 5rem;
+}
+
+.telemedicine ul {
+    margin-top: 2rem;
+}
+
+.telemedicine ul a {
+    display: inline-block;
+    text-decoration: underline;
+    transition: 0.25s color;
+    width: fit-content;
+}
+
+.telemedicine ul a:not(:first-child) {
+    margin-top: 1rem;
+}
+
+.telemedicine ul a:hover {
+    color: var(--primary-accent);
+}
+
+.virus-1 {
+    top: -10rem;
+    right: -15rem;
+    width: 35%;
+}
+
+.virus-2 {
+    left: -10rem;
+    bottom: -15rem;
+    width: 35%;
+}
+
+.virus-3 {
+    top: -20rem;
+    left: -15rem;
+    width: 35%;
+}
+
+.virus-4 {
+    bottom: -15rem;
+    right: -15rem;
+    width: 35%;
+}
+
+@media screen and (min-width: 1556px) {
+    .hero {
+        padding: 0 15rem;
+    }
+
+    .hero h1 {
+        font-size: 7rem;
+    }
+
+    .hotline-container {
+        padding: 5rem 15rem;
+    }
+
+    .emergency {
+        padding: 10rem 15rem;
+    }
+
+    .telemedicine {
+        padding: 5rem 15rem 0;
+    }
+}

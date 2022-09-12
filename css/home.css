@@ -127,7 +127,7 @@
     color: var(--secondary-accent);
 }
 
-.cases .deaths-recoveries p {
+.cases .deaths-recoveries > p {
     text-align: center;
 }
 

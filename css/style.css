@@ -2,7 +2,7 @@
 
 :root {
     --primary-background: #f6f9fe;
-    --secondary-background: #b1d0f3;
+    --secondary-background: #d0e6fe;
     --primary-text: #0f405b;
     --secondary-text: #7f919d;
     --primary-accent: #3074e3;
@@ -97,6 +97,12 @@ nav ul li a.active {
     color: var(--primary-text);
 }
 
+nav ul li a.active.hotline {
+    color: var(--primary-accent);
+    background-color: var(--secondary-background);
+    border: 2px solid var(--secondary-background);
+}
+
 nav ul li:last-child a {
     padding: 0.75rem 1.5rem;
     border-radius: 8px;
@@ -119,6 +125,7 @@ footer {
 
 .smooth-scroll {
     position: fixed;
+    width: 100%;
 }
 
 .virus[data-scroll] {
@@ -137,6 +144,31 @@ footer {
     width: unset;
 }
 
+.references {
+    position: relative;
+    padding: 10rem 10rem 0;
+}
+
+.references h3 {
+    font-size: 2rem;
+    color: var(--secondary-text);
+}
+
+.references a {
+    display: block;
+    text-decoration: underline;
+    transition: 0.25s color;
+    width: fit-content;
+}
+
+.references a:not(:first-child) {
+    margin-top: 1rem;
+}
+
+.references a:hover {
+    color: var(--primary-accent);
+}
+
 @media screen and (min-width: 1556px) {
     body {
         font-size: 1.25rem;
@@ -144,5 +176,9 @@ footer {
 
     nav {
         padding: 2rem 15rem;
+    }
+
+    .references {
+        padding: 10rem 15rem 0;
     }
 }

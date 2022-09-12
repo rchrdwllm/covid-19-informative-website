@@ -1,0 +1,144 @@
+.hero {
+    position: relative;
+    height: 100vh;
+    padding: 0 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 7rem;
+}
+
+.hero h1 span {
+    color: var(--primary-accent);
+}
+
+.possible-symptoms {
+    position: relative;
+    padding: 5rem 10rem;
+}
+
+.possible-symptoms p {
+    border-radius: 50px;
+    color: var(--primary-accent);
+    background-color: var(--secondary-background);
+    padding: 1.5rem 2rem;
+    width: fit-content;
+    margin-bottom: 1rem;
+}
+
+.possible-symptoms h1 {
+    font-size: 5rem;
+}
+
+.possible-symptoms .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6rem;
+    place-items: center;
+    margin-top: 2rem;
+}
+
+.possible-symptoms .grid ul {
+    width: 100%;
+}
+
+.possible-symptoms .grid .img-container {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.possible-symptoms .grid .img-container img {
+    object-fit: cover;
+}
+
+.emergency {
+    padding: 10rem;
+}
+
+.emergency h1 {
+    font-size: 5rem;
+}
+
+.emergency ul {
+    margin-top: 2rem;
+}
+
+.emergency div {
+    border-radius: 20px;
+    background-color: var(--secondary-background);
+    padding: 1.5rem 2rem;
+    margin-top: 5rem;
+}
+
+.emergency div p {
+    color: var(--primary-accent);
+}
+
+.what-to-do {
+    padding: 0 10rem;
+}
+
+.what-to-do h1 {
+    font-size: 5rem;
+}
+
+.what-to-do p {
+    margin-top: 2rem;
+    width: 60%;
+    text-align: justify;
+}
+
+.virus-1 {
+    top: -5rem;
+    left: -5rem;
+    width: 30%;
+}
+
+.virus-2 {
+    right: -15rem;
+    bottom: -15rem;
+}
+
+.virus-3 {
+    left: -10rem;
+    bottom: -25rem;
+    width: 25%;
+}
+
+.virus-4 {
+    right: -20rem;
+    bottom: -10rem;
+}
+
+@media screen and (min-width: 1556px) {
+    .hero {
+        padding: 0 15rem;
+    }
+
+    .hero h1 {
+        font-size: 7rem;
+    }
+
+    .possible-symptoms {
+        padding: 5rem 15rem;
+    }
+
+    .possible-symptoms h1 {
+        font-size: 6rem;
+    }
+
+    .possible-symptoms .grid .img-container {
+        height: 80%;
+    }
+
+    .emergency {
+        padding: 10rem 15rem;
+    }
+
+    .what-to-do {
+        padding: 0 15rem;
+    }
+}
