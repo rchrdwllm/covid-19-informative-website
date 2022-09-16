@@ -1,7 +1,8 @@
 .hero {
     position: relative;
     height: 100vh;
-    padding: 0 10rem;
+
+    padding: 0 15rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,7 +18,8 @@
 
 .possible-symptoms {
     position: relative;
-    padding: 5rem 10rem;
+
+    padding: 5rem 15rem;
 }
 
 .possible-symptoms p {
@@ -30,7 +32,7 @@
 }
 
 .possible-symptoms h1 {
-    font-size: 5rem;
+    font-size: 6rem;
 }
 
 .possible-symptoms .grid {
@@ -48,6 +50,7 @@
 .possible-symptoms .grid .img-container {
     border-radius: 20px;
     overflow: hidden;
+    height: 80%;
 }
 
 .possible-symptoms .grid .img-container img {
@@ -55,7 +58,7 @@
 }
 
 .emergency {
-    padding: 10rem;
+    padding: 10rem 15rem;
 }
 
 .emergency h1 {
@@ -78,7 +81,7 @@
 }
 
 .what-to-do {
-    padding: 0 10rem;
+    padding: 0 15rem;
 }
 
 .what-to-do h1 {
@@ -113,9 +116,9 @@
     bottom: -10rem;
 }
 
-@media screen and (min-width: 1556px) {
+@media screen and (max-width: 1440px) {
     .hero {
-        padding: 0 15rem;
+        padding: 0 10rem;
     }
 
     .hero h1 {
@@ -123,11 +126,46 @@
     }
 
     .possible-symptoms {
-        padding: 5rem 15rem;
+        padding: 5rem 10rem;
     }
 
     .possible-symptoms h1 {
+        font-size: 5rem;
+    }
+
+    .possible-symptoms .grid .img-container {
+        height: unset;
+    }
+
+    .emergency {
+        padding: 10rem;
+    }
+
+    .what-to-do {
+        padding: 0 10rem;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .hero {
+        padding: 0 5rem;
+    }
+
+    .hero h1 {
         font-size: 6rem;
+    }
+
+    .possible-symptoms {
+        padding: 5rem 5rem;
+    }
+
+    .possible-symptoms h1 {
+        font-size: 4rem;
+    }
+
+    .possible-symptoms .grid {
+        grid-template-columns: 1fr;
+        gap: 0;
     }
 
     .possible-symptoms .grid .img-container {
@@ -135,10 +173,120 @@
     }
 
     .emergency {
-        padding: 10rem 15rem;
+        padding: 10rem 5rem;
+    }
+
+    .emergency h1 {
+        font-size: 4rem;
     }
 
     .what-to-do {
-        padding: 0 15rem;
+        padding: 0 5rem;
+    }
+
+    .what-to-do h1 {
+        font-size: 4rem;
+    }
+
+    .what-to-do p {
+        width: 100%;
+    }
+
+    .virus-1 {
+        top: -5rem;
+        left: -5rem;
+        width: 40%;
+    }
+
+    .virus-2 {
+        right: -15rem;
+        bottom: -15rem;
+    }
+
+    .virus-3 {
+        left: -10rem;
+        bottom: -25rem;
+        width: 35%;
+    }
+
+    .virus-4 {
+        right: -20rem;
+        bottom: -10rem;
+    }
+}
+
+@media screen and (max-width: 864px) {
+    .hero {
+        padding: 0 2rem;
+    }
+
+    .hero h1 {
+        font-size: 5rem;
+    }
+
+    .possible-symptoms {
+        padding: 5rem 2rem;
+    }
+
+    .possible-symptoms h1 {
+        font-size: 3rem;
+    }
+
+    .possible-symptoms .grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .possible-symptoms .grid .img-container {
+        height: 80%;
+    }
+
+    .emergency {
+        padding: 10rem 2rem;
+    }
+
+    .emergency h1 {
+        font-size: 3rem;
+    }
+
+    .what-to-do {
+        padding: 0 2rem;
+    }
+
+    .what-to-do h1 {
+        font-size: 3rem;
+    }
+
+    .what-to-do p {
+        width: 100%;
+    }
+
+    .virus-1 {
+        top: -5rem;
+        left: -5rem;
+        width: 10%;
+    }
+
+    .virus-2 {
+        right: -15rem;
+        bottom: -15rem;
+        width: 5%;
+    }
+
+    .virus-3 {
+        left: -10rem;
+        bottom: -25rem;
+        width: 45%;
+    }
+
+    .virus-4 {
+        right: -20rem;
+        bottom: -10rem;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .hero h1 {
+        font-size: 3rem;
     }
 }

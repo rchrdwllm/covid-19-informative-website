@@ -4,11 +4,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 10rem;
+
+    padding: 0 15rem;
 }
 
 .hero h1 {
-    font-size: 6rem;
+    font-size: 7rem;
 }
 
 .hero h1 span {
@@ -16,7 +17,7 @@
 }
 
 .hotline-container {
-    padding: 5rem 10rem;
+    padding: 5rem 15rem;
 }
 
 .hotline-container .hotline {
@@ -58,7 +59,8 @@
 
 .telemedicine {
     position: relative;
-    padding: 5rem 10rem 0;
+
+    padding: 5rem 15rem 0;
 }
 
 .telemedicine h1 {
@@ -108,24 +110,74 @@
     width: 35%;
 }
 
-@media screen and (min-width: 1556px) {
+@media screen and (max-width: 1440px) {
     .hero {
-        padding: 0 15rem;
+        padding: 0 10rem;
     }
 
     .hero h1 {
-        font-size: 7rem;
+        font-size: 6rem;
     }
 
     .hotline-container {
-        padding: 5rem 15rem;
-    }
-
-    .emergency {
-        padding: 10rem 15rem;
+        padding: 5rem 10rem;
     }
 
     .telemedicine {
-        padding: 5rem 15rem 0;
+        padding: 5rem 10rem 0;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .hero {
+        padding: 0 5rem;
+    }
+
+    .hero h1 {
+        font-size: 5rem;
+    }
+
+    .hotline-container {
+        padding: 5rem 5rem;
+    }
+
+    .telemedicine {
+        padding: 5rem 5rem 0;
+    }
+}
+
+@media screen and (max-width: 864px) {
+    .hero {
+        padding: 0 2rem;
+    }
+
+    .hero h1 {
+        font-size: 5rem;
+    }
+
+    .hotline-container {
+        padding: 5rem 2rem;
+    }
+
+    .telemedicine {
+        padding: 5rem 2rem 0;
+    }
+
+    .telemedicine h1 {
+        font-size: 5rem;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hotline {
+        overflow-x: scroll;
+    }
+
+    .telemedicine h1 {
+        font-size: 2rem;
     }
 }

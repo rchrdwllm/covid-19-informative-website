@@ -12,6 +12,10 @@
     <body>
         <nav>
             <h1>COVID-19</h1>
+            <div class="burger">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </div>
             <ul>
                 <li><a href="#" class="active">Home</a></li>
                 <li><a href="symptoms.html">Symptoms</a></li>
@@ -84,7 +88,7 @@
                         </svg>
                     </div>
                     <div class="global-text">
-                        <h1>613,956,272</h1>
+                        <h1 id="global-cases">...</h1>
                         <p>Total cases of COVID-19 worldwide</p>
                     </div>
                 </div>
@@ -93,19 +97,20 @@
                         <div class="card recovery">
                             <img src="img/health.png" alt="recovery" />
                             <div>
-                                <h1>592,775,255</h1>
+                                <h1 id="global-recoveries">...</h1>
                                 <p>Total recoveries</p>
                             </div>
                         </div>
                         <div class="card death">
                             <img src="img/death.png" alt="death" />
                             <div>
-                                <h1>6,516,875</h1>
+                                <h1 id="global-deaths">...</h1>
                                 <p>Total deaths</p>
                             </div>
                         </div>
                     </div>
-                    <p>Updated: September 12, 2022</p>
+                    <p id="updated-text">Updated:</p>
+                    <p>Data from <a href="https://disease.sh/">disease.sh API</a></p>
                     <img data-scroll data-scroll-speed="2" src="img/virus.png" alt="virus" class="virus virus-3" />
                 </div>
             </section>
@@ -125,6 +130,13 @@
                 <p>Copyright 2022. All rights reserved. Designed and developed by Group 7 - CS11S2.</p>
             </footer>
         </div>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"
+            integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+            type="text/javascript"
+        ></script>
         <script
             type="text/javascript"
             src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"
