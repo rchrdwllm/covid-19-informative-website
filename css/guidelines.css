@@ -122,7 +122,58 @@
     object-fit: cover;
 }
 
-@media screen and (max-width: 1440px) {
+.accordion-container {
+    padding: 10rem 15rem 0;
+}
+
+.accordion-container h1 {
+    font-size: 6rem;
+}
+
+.accordion-container .container {
+    margin-top: 3rem;
+}
+
+h3 {
+    color: var(--primary-accent);
+    margin: 3rem 0 1rem;
+    letter-spacing: 5px;
+}
+
+.accordion-item {
+    background-color: var(--card);
+    border-radius: 50px;
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+    transition: 1s box-shadow;
+}
+
+.accordion-link {
+    display: block;
+    padding: 1.5rem 0;
+    text-decoration: none;
+    width: 100%;
+    color: var(--primary-text);
+    font-weight: 700;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    transition: 1s max-height, 0.25s padding;
+}
+
+.accordion-item:target {
+    box-shadow: 0 40px 50px #deebff;
+}
+
+.accordion-item:target .answer {
+    max-height: 80rem;
+    padding: 1rem 0 1.5rem;
+}
+
+@media screen and (max-width: 1556px) {
     .hero {
         padding: 0 10rem;
     }
@@ -151,6 +202,14 @@
 
     .facts {
         padding: 10rem 10rem 0;
+    }
+
+    .accordion-container {
+        padding: 10rem 10rem 0;
+    }
+
+    .accordion-container h1 {
+        font-size: 5rem;
     }
 }
 
@@ -192,6 +251,14 @@
     .facts {
         padding: 10rem 5rem 0;
     }
+
+    .accordion-container {
+        padding: 10rem 5rem 0;
+    }
+
+    .accordion-container h1 {
+        font-size: 4rem;
+    }
 }
 
 @media screen and (max-width: 864px) {
@@ -225,7 +292,15 @@
         padding: 10rem 2rem 0;
     }
 
+    .accordion-container {
+        padding: 10rem 2rem 0;
+    }
+
     .facts h1 {
+        font-size: 3rem;
+    }
+
+    .accordion-container h1 {
         font-size: 3rem;
     }
 }
