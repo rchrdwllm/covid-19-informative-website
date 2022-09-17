@@ -116,7 +116,7 @@
     bottom: -10rem;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1556px) {
     .hero {
         padding: 0 10rem;
     }
