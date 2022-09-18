@@ -16,7 +16,7 @@ function populateCovidCases(data) {
     casesText.innerHTML = cases.toLocaleString();
     recoveriesText.innerHTML = recovered.toLocaleString();
     deathsText.innerHTML = deaths.toLocaleString();
-    updatedText.innerHTML = `Updated: ${new Date().toLocaleString()} (Updated every 10 mins)`;
+    updatedText.innerHTML = `Last updated: ${new Date().toLocaleString()}`;
 }
 
 fetchCovidCases();
