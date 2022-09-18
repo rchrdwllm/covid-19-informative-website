@@ -183,8 +183,8 @@
     100% {
         fill: var(--border);
         stroke: var(--border);
-        stroke-dashoffset: 150%;
-        stroke-dasharray: 100 5%;
+        stroke-dashoffset: -150%;
+        stroke-dasharray: 150% 50;
         stroke-width: 1.5px;
     }
 }
