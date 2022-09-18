@@ -1,0 +1,320 @@
+.hero {
+    position: relative;
+    height: 100vh;
+
+    padding: 0 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 10rem;
+}
+
+.hero h1 span {
+    color: var(--primary-accent);
+}
+
+.about-covid {
+    padding: 5rem 15rem 10rem;
+}
+
+.about-covid h1 {
+    font-size: 6rem;
+}
+
+.about-covid h1 span {
+    color: var(--primary-accent);
+}
+
+.about-covid .grid {
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    gap: 6rem;
+    margin-top: 3rem;
+    place-items: center;
+}
+
+.about-covid .grid div p {
+    text-align: justify;
+}
+
+.about-covid .grid div p:not(:first-child) {
+    margin-top: 1rem;
+}
+
+.cases .global {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cases .global .globe {
+    transform: scale(1);
+}
+
+.cases .global .globe path {
+    stroke-width: 1px;
+    animation: globeAnimation 15s infinite alternate linear;
+}
+
+.cases .global .global-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+}
+
+.cases .global .global-text h1 {
+    font-size: 10rem;
+}
+
+.cases .global .global-text p {
+    margin-top: 1rem;
+}
+
+.cases .deaths-recoveries {
+    position: relative;
+    margin-top: 5rem;
+}
+
+.cases .deaths-recoveries a {
+    text-decoration: underline;
+    transition: 0.25s color;
+    width: fit-content;
+}
+
+.cases .deaths-recoveries a:hover {
+    color: var(--primary-accent);
+}
+
+.cases .deaths-recoveries .flexbox {
+    padding: 5rem 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cases .deaths-recoveries .flexbox .card {
+    display: flex;
+    align-items: center;
+    background-color: var(--card);
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+.cases .deaths-recoveries .flexbox .card:not(:first-child) {
+    margin-left: 3rem;
+}
+
+.cases .deaths-recoveries .flexbox .card img {
+    width: 6rem;
+    height: 6rem;
+}
+.cases .deaths-recoveries .flexbox .card div {
+    margin-left: 2rem;
+}
+
+.cases .deaths-recoveries .flexbox .card div h1 {
+    font-size: 3rem;
+}
+
+.cases .deaths-recoveries .flexbox .card.recovery {
+    box-shadow: 0 40px 50px #deebff;
+}
+
+.cases .deaths-recoveries .flexbox .card.death {
+    box-shadow: 0 40px 50px #ffefef;
+}
+
+.cases .deaths-recoveries .flexbox .card.recovery div h1 {
+    color: var(--primary-accent);
+}
+
+.cases .deaths-recoveries .flexbox .card.death div h1 {
+    color: var(--secondary-accent);
+}
+
+.cases .deaths-recoveries > p {
+    text-align: center;
+}
+
+.virus-1 {
+    top: -15rem;
+    left: -15rem;
+}
+
+.virus-2 {
+    bottom: -15rem;
+    right: -15rem;
+}
+
+.virus-3 {
+    top: 0;
+    left: -20rem;
+    width: 40%;
+}
+
+@keyframes globeAnimation {
+    0% {
+        fill: var(--primary-background);
+        stroke: var(--primary-text);
+        stroke-opacity: 0.25;
+        stroke-dashoffset: -150%;
+        stroke-dasharray: 30% 50;
+        stroke-width: 1.5px;
+    }
+    25% {
+        fill: var(--primary-background);
+        stroke: var(--primary-text);
+    }
+    50% {
+        fill: var(--primary-background);
+        stroke: var(--primary-text);
+    }
+    75% {
+        fill: var(--primary-background);
+        stroke: var(--primary-text);
+    }
+    100% {
+        fill: var(--border);
+        stroke: var(--border);
+        stroke-dashoffset: 150%;
+        stroke-dasharray: 100 5%;
+        stroke-width: 1.5px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .hero {
+        padding: 0 10rem;
+    }
+
+    .hero h1 {
+        font-size: 7rem;
+    }
+
+    .about-covid {
+        padding: 5rem 10rem 10rem;
+    }
+
+    .about-covid h1 {
+        font-size: 5rem;
+    }
+
+    .cases .global .globe-container .globe {
+        transform: scale(0.8);
+    }
+
+    .cases .global .global-text h1 {
+        font-size: 8rem;
+    }
+
+    .cases .deaths-recoveries {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .cases .deaths-recoveries .flexbox {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cases .deaths-recoveries .flexbox .card {
+        margin: 2rem 0 !important;
+        min-width: 60%;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .hero {
+        padding: 0 5rem;
+    }
+
+    .about-covid {
+        padding: 5rem 5rem 10rem;
+    }
+
+    .about-covid h1 {
+        font-size: 4rem;
+    }
+
+    .cases .deaths-recoveries .flexbox .card {
+        min-width: 70%;
+    }
+}
+
+@media screen and (max-width: 864px) {
+    .hero {
+        padding: 0 2rem;
+    }
+
+    .hero h1 {
+        font-size: 5rem;
+    }
+
+    .about-covid {
+        padding: 5rem 2rem 10rem;
+    }
+
+    .about-covid .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-covid .grid img {
+        width: 50%;
+    }
+
+    .about-covid h1 {
+        font-size: 3rem;
+    }
+
+    .cases .global .globe-container .globe {
+        transform: scale(0.6);
+    }
+
+    .cases .global .global-text h1 {
+        font-size: 6rem;
+    }
+
+    .cases .deaths-recoveries .flexbox .card {
+        min-width: 80%;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .cases .global .globe-container .globe {
+        transform: scale(0.4);
+    }
+
+    .cases .global .global-text h1 {
+        font-size: 3rem;
+    }
+
+    .cases .deaths-recoveries .flexbox {
+        padding: 5rem 2rem;
+    }
+
+    .cases .deaths-recoveries .flexbox .card {
+        min-width: unset;
+    }
+
+    .cases .deaths-recoveries .flexbox .card div h1 {
+        font-size: 1.5rem;
+    }
+
+    .cases .deaths-recoveries .flexbox .card img {
+        width: 20%;
+        object-fit: contain;
+    }
+}
