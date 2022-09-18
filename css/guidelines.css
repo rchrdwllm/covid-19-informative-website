@@ -63,6 +63,48 @@
     margin-top: 2rem;
 }
 
+.distancing {
+    padding: 0 15rem;
+    gap: 7rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+}
+
+.distancing h1 {
+    font-size: 6rem;
+}
+
+.distancing .img-container {
+    width: 100%;
+}
+
+.distancing p {
+    margin-top: 2rem;
+    text-align: justify;
+}
+
+.masks {
+    padding: 15rem 15rem 10rem;
+    gap: 7rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+}
+
+.masks h1 {
+    font-size: 6rem;
+}
+
+.masks .img-container {
+    width: 100%;
+}
+
+.masks p {
+    margin-top: 2rem;
+    text-align: justify;
+}
+
 .facts {
     position: relative;
 
@@ -136,7 +178,7 @@
 
 h3 {
     color: var(--primary-accent);
-    margin: 3rem 0 1rem;
+    margin-bottom: 1rem;
     letter-spacing: 5px;
 }
 
@@ -204,6 +246,22 @@ h3 {
         padding: 10rem 10rem 0;
     }
 
+    .distancing {
+        padding: 0 10rem;
+    }
+
+    .distancing h1 {
+        font-size: 5rem;
+    }
+
+    .masks {
+        padding: 15rem 10rem 10rem;
+    }
+
+    .masks h1 {
+        font-size: 5rem;
+    }
+
     .accordion-container {
         padding: 10rem 10rem 0;
     }
@@ -252,6 +310,28 @@ h3 {
         padding: 10rem 5rem 0;
     }
 
+    .distancing {
+        grid-template-columns: 1fr;
+        padding: 0 5rem 0;
+        gap: 3rem;
+        place-items: unset;
+    }
+
+    .distancing h1 {
+        font-size: 4rem;
+    }
+
+    .masks {
+        grid-template-columns: 1fr;
+        padding: 10rem 5rem 10rem;
+        gap: 3rem;
+        place-items: unset;
+    }
+
+    .masks h1 {
+        font-size: 4rem;
+    }
+
     .accordion-container {
         padding: 10rem 5rem 0;
     }
@@ -290,6 +370,22 @@ h3 {
 
     .facts {
         padding: 10rem 2rem 0;
+    }
+
+    .distancing {
+        padding: 0 2rem 0;
+    }
+
+    .distancing h1 {
+        font-size: 3rem;
+    }
+
+    .masks {
+        padding: 10rem 2rem 10rem;
+    }
+
+    .masks h1 {
+        font-size: 3rem;
     }
 
     .accordion-container {
