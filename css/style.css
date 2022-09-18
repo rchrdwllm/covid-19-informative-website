@@ -11,6 +11,11 @@
     --card: #ffffff;
 }
 
+::selection {
+    background-color: var(--primary-accent);
+    color: var(--secondary-background);
+}
+
 * {
     margin: 0;
     padding: 0;
