@@ -173,7 +173,7 @@ h3 {
     padding: 1rem 0 1.5rem;
 }
 
-@media screen and (max-width: 1556px) {
+@media screen and (max-width: 1600px) {
     .hero {
         padding: 0 10rem;
     }

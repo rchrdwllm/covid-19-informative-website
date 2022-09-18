@@ -183,7 +183,7 @@ footer {
     color: var(--primary-accent);
 }
 
-@media screen and (max-width: 1556px) {
+@media screen and (max-width: 1600px) {
     body {
         font-size: 1rem;
     }
